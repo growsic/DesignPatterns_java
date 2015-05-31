@@ -6,4 +6,4 @@ by [tutorialspoint](http://www.tutorialspoint.com/design_pattern/iterator_patter
 In this iterator pattern example, I've implemented bookshelf. add books to bookShelf and get all elements using iterator.
 
 ##UML
-[logo]: https://github.com/growsic/DesignPatterns_java/blob/master/IteratorPattern/src/pic/IteratorPatternExample.png "Iterator UML"
+![alt tag] (https://github.com/growsic/DesignPatterns_java/blob/master/IteratorPattern/src/pic/IteratorPatternExample.png)
