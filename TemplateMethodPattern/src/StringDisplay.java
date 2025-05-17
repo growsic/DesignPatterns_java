@@ -1,4 +1,8 @@
 
+/*
+ * Template Methodパターンのもう一つの具体クラス。
+ * 文字列全体を枠で囲んで表示します。
+ */
 public class StringDisplay extends AbstractDisplay {
 
 	private String string;

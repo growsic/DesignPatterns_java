@@ -1,4 +1,7 @@
-
+/*
+ * Factory Methodパターンの具体的製品クラス。
+ * 生成されたIDカードを表し、所有者名とID番号を保持します。
+ */
 public class IDCard extends Product {
 	
 	private String ownersName;
