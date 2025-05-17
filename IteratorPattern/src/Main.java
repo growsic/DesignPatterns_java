@@ -1,25 +1,29 @@
 
+/*
+ * Iteratorパターンの動作確認用クラス。
+ * BookShelfに追加したBookをIteratorを用いて順番に表示します。
+ */
 public class Main {
-	//bookShelf size
+        // 本棚の最大サイズ
 	private final static int maxBookSize = 4;
 	
 	public static void main(String[] args) {
 		
-		//init BookShelf instance
+                // BookShelfの生成
 		BookShelf books = new BookShelf(maxBookSize);
 		
-		//add books to bookshelf
+                // 本を追加
 		books.appendBook(new Book("Harry Potter 1"));
 		books.appendBook(new Book("Harry Potter 2"));
 		books.appendBook(new Book("Harry Potter 3"));
 		
-		//get bookshelf length
+                // 本棚の長さを表示
 		System.out.println("bookShelf length:" + books.getLength());
 		
-		//generate iterator using BookShelf class method
+                // Iteratorの取得
 		Iterator iterator = books.iterator();
 		
-		//print book's name using iterator
+                // Iteratorで書籍名を表示
 		while(iterator.hasNext()) {
 			Book book = (Book)iterator.next();
 			System.out.println(book.getName());

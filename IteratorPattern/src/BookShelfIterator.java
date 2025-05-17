@@ -1,4 +1,7 @@
 
+/*
+ * IteratorパターンのConcreteIterator。BookShelfの要素を順に返します。
+ */
 public class BookShelfIterator implements Iterator {
 	
 	//field
@@ -11,11 +14,12 @@ public class BookShelfIterator implements Iterator {
 		this.index = 0;
 	}
 
-	@Override
-	/**
-	 * @return boolean if bookshelf has another book
-	 */
-	public boolean hasNext() {
+        @Override
+        /**
+         * まだ要素が残っているかを判定する
+         * @return 残っていればtrue
+         */
+        public boolean hasNext() {
 		if(index < this.bookshelf.getLength()) {
 			return true;
 		}else {
@@ -23,13 +27,13 @@ public class BookShelfIterator implements Iterator {
 		}
 	}
 
-	@Override
-	/**
-	 * get next book from bookshelf and move Cursor to next
-	 * @return Book
-	 */
-	public Object next() {
-		if(hasNext()) {
+        @Override
+        /**
+         * 次のBookオブジェクトを返し、カーソルを進める
+         * @return 次のBook
+         */
+        public Object next() {
+                if(hasNext()) {
 			Book book = this.bookshelf.getBookAt(index);
 			index++;
 			return book;

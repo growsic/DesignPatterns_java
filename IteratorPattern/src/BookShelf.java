@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 
-
-
+/*
+ * IteratorパターンのConcreteAggregateに相当するクラス。
+ * Bookオブジェクトを内部に保持し、iterator()でBookShelfIteratorを生成します。
+ */
 public class BookShelf implements Aggregate {
 	
 	//field
@@ -34,7 +36,7 @@ public class BookShelf implements Aggregate {
 	}
 
 	@Override
-	//generate iterator in main method and get books using hasNext() and next() methods
+        // iterator()はBookShelfIteratorを返す
 	public Iterator iterator() {
 		return new BookShelfIterator(this);
 	}

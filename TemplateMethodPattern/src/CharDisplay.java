@@ -1,4 +1,8 @@
 
+/*
+ * Template Methodパターンの具体クラス。
+ * 1文字を表示するための実装を提供します。
+ */
 public class CharDisplay extends AbstractDisplay {
 	private char ch;
 

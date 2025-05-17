@@ -1,6 +1,9 @@
 import java.util.List;
 
-
+/*
+ * Factory Methodパターンの利用例。
+ * Factoryを通じてIDCardを生成し、use()メソッドで利用します。
+ */
 public class Main {
 
 	public static void main(String[] args) {

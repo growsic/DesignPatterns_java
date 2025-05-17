@@ -2,6 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/*
+ * Factory Methodパターンの具体的ファクトリ。
+ * IDCardインスタンスを生成し、所有者リストを管理します。
+ */
 public class IDCardFactory extends Factory {
 	private List ownerList = new ArrayList();
 	private int idCounter = 1000;

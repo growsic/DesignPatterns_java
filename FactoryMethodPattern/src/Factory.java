@@ -1,4 +1,8 @@
-
+/*
+ * Factory Methodパターンにおける抽象ファクトリ。
+ * 製品を生成するための処理の流れを定め、
+ * 実際の生成処理はサブクラスに委ねます。
+ */
 public abstract class Factory {
 	
 	public final Product create(String owner) {	
